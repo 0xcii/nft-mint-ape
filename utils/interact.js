@@ -3,7 +3,9 @@ const { MerkleTree } = require('merkletreejs')
 const keccak256 = require('keccak256')
 const whitelist = require('../scripts/whitelist.js')
 
-const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
+// const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
+const web3 = createAlchemyWeb3("https://arb-mainnet.g.alchemy.com/v2/mfq7qHTeIDhpxaAlwCV7CwkqZIFiBdei")
+
 import { config } from '../dapp.config'
 
 const contract = require('../artifacts/contracts/BoredApe.sol/BoredApe.json')
